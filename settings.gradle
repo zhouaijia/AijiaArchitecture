@@ -1,0 +1,3 @@
+rootProject.name='AijiaArchitecture'
+include ':app'
+include ':aijialibrary'

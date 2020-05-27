@@ -1,0 +1,151 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+        <item name="colorAccent">@color/global_blue</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/status_bar</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="FullScreen" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="FullScreen.AppCompat" parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="StartActivity.Theme" parent="FullScreen">
+        <item name="android:windowBackground">@drawable/splash_logo_background</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowTitleBackgroundStyle">@null</item>
+    </style>
+
+    <style name="MyTablayoutstyle" parent="Base.Widget.Design.TabLayout">
+        <item name="tabMode">scrollable</item>
+        <item name="tabPaddingStart">0dp</item>
+        <item name="tabPaddingEnd">15dp</item>
+        <item name="tabIndicatorColor">@color/green</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabTextColor">@color/gray_d5d</item>
+        <item name="tabTextAppearance">@style/TabLayoutTextSize</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+    </style>
+
+    <!--设置Tablayout字体大小-->
+    <style name="TabLayoutTextSize">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="bookcity_title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/bookcity_larger</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="bookcity_name">
+        <item name="android:textColor">@color/black_666</item>
+        <item name="android:textSize">@dimen/bookcity_big</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="bookcity_gray">
+        <item name="android:textColor">@color/gray_ad</item>
+        <item name="android:textSize">@dimen/bookcity_middle</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+    <style name="round_blue_big">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">@color/blue_4fc</item>
+        <item name="android:textSize">@dimen/bookcity_big</item>
+        <item name="android:background">@drawable/round_blue_big</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <style name="common_textview">
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="common_textview_multi_line" parent="@style/common_textview">
+        <item name="android:lineSpacingMultiplier">1.3</item>
+    </style>
+    <style name="common_textview_single_line" parent="@style/common_textview">
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="host_my_pager_sliding_tab_strip_style">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:background">#fff4f4f4</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="pstsActivateTextColor">@color/psts_active_text_color</item>
+        <item name="pstsDeactivateTextColor">#ff666666</item>
+        <item name="pstsDividerColor">@color/transparent</item>
+        <item name="pstsIndicatorColor">@color/psts_indicator_color</item>
+        <item name="pstsIndicatorHeight">2dip</item>
+        <item name="pstsTabBackground">@color/transparent</item>
+        <item name="pstsTabPaddingLeftRight">45.0dip</item>
+        <item name="pstsTabSwitch">true</item>
+        <item name="pstsUnderlineColor">#ffe8e8e8</item>
+        <item name="pstsUnderlineHeight">0.0dip</item>
+    </style>
+
+    <style name="SettingsDialog" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SettingsDialog.AppSettingsDialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>
